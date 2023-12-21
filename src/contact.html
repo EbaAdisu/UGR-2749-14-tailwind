@@ -1,85 +1,151 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <title>Contact</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content=" width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"/>
-  
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-  <header>
-    <a href="home.html"><img src="images/logo3.jpg" alt="logo"></a>
-    <nav>
-      <button class="dropbtn">
-        <img src="images/menu1.jpg" alt="menu">
-      </button>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  
-  <main>
-    <address>
-    <p>
-        Address<br><br>
-        Mr. Eba Adisu  <br>
-        Sofware Student <br>
-        Addis Ababa Institute of Technology, 5 Kilo<br><br>
-      Contact
-      <ul>
-        <li><img src="images/email.jpg" alt="email">ebaadisu2@gmail.com</li>
-        <li><img src="images/linkedin.jpg" alt="linkedin">linkedin</li>
-        <li><img src="images/phone.jpg" alt="phone number">+251945813571</li>
-      </ul>
-      Social media
-      <ul>
-        <li><img src="images/yt.jpg" alt="youtube">youtube</li>
-        <li><img src="images/insta.jpg" alt="instagram">instagram</li>
-        <li><img src="images/fb.jpg" alt="facebook">facebook</li>
-      </ul>
-    </p>
-    </address>
+<body class="bg-black">
+    <header class="bg-green-500">
+        <nav class="container flex justify-between p-4">
+            <a href="#" class="text-xl font-bold text-gray-800">
+                <img src="images/logo3.jpg" width="112" height="28" class="rounded-md">
+            </a>
+            <div class="relative md:hidden">
+                <button class="  text-white px-4 py-2 rounded-md">
+                    <i class="fa-solid fa-bars text-3xl"></i>
+                </button>
+                <div class="absolute text-center w-screen right-0 hidden bg-green-500 border border-gray-300 rounded-md">
+                    <a href="home.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About</a>
+                    <a href="projects.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Projects</a>
+                    <a href="hobbies.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Hobbies</a>
+                    <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contact</a>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="home.html" class="text-white">Home</a>
+                <a href="about.html" class="text-white">About</a>
+                <a href="projects.html" class="text-white">Projects</a>
+                <a href="hobbies.html" class="text-white">Hobbies</a>
+                <a href="contact.html" class="text-white">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-black">
+        <section class="container mx-auto py-6">
+            <div class="flex justify-center gap-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <div class="grid grid-cols-1  ">
+                        <div class="col-span-2 lg:col-span-1">
+                            <div class="content">
+                                <h2 class="text-white text-2xl font-bold mb-4">Address</h2>
+                                <p class="text-white">
+                                    Mr. Eba Adisu <br>
+                                    Software Student <br>
+                                    Addis Ababa Institute of Technology, 5 Kilo
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="flex  gap-3">
+                                <div class="col-span-1">
+                                    <div class="content">
+                                        <h2 class="text-white text-2xl font-bold mb-4">Contact</h2>
+                                        <ul class="text-white">
+                                            <li><i class="fas fa-envelope"></i> ebaadisu2@gmail.com</li>
+                                            <li><i class="fab fa-linkedin"></i> linkedin</li>
+                                            <li><i class="fas fa-phone"></i> +251945813571</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-span-1">
+                                    <div class="content">
+                                        <h2 class="text-white text-2xl font-bold mb-4">Social media</h2>
+                                        <ul class="text-white">
+                                            <li><i class="fab fa-youtube"></i> youtube</li>
+                                            <li><i class="fab fa-instagram"></i> instagram</li>
+                                            <li><i class="fab fa-facebook"></i> facebook</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="w-full">
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-white text-sm font-medium mb-2">Name</label>
+                                <input id="name" name="name" type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" placeholder="Your Name" required>
+                            </div>
+                        
+                            <div class="mb-4">
+                                <label for="email" class="block text-white text-sm font-medium mb-2">Email</label>
+                                <input id="email" name="email" type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" placeholder="Your Email" required>
+                            </div>
+                        
+                            <div class="mb-6">
+                                <label for="message" class="block text-white text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" placeholder="Your Message" rows="4" required></textarea>
+                            </div>
+                        
+                            <div>
+                                <button type="submit" class="w-full bg-green-500 text-white py-2 px-4 rounded-md focus:outline-none focus:ring focus:border-blue-300">
+                                    Send 
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/5 hidden md:block">
+                    <aside class="content">
+                        <h2 class="text-white text-2xl mb-4">Follow me</h2>
+                        <ul class="">
+                            <li><i class="fa-brands fa-youtube text-white"></i> <em class="text-white">youtube</em></li>
+                            <li><i class="fa-brands fa-instagram text-white"></i> <em class="text-white">instagram</em></li>
+                            <li><i class="fa-brands fa-facebook text-white"></i> <em class="text-white">facebook</em></li>
+                        </ul>
+                        <div class="mx-auto">
+                            <figure class="mb-6">
+                                <img src="images/profile3.jpg" alt="profile" class="rounded-lg">
+                            </figure>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class=" bg-gray-800 text-white ">
+        <div class="container flex justify-between ">
+            <div class="ml-10">
+                <h2 class="text-2xl font-bold mb-4">Contact</h2>
+                <ul>
+                    <li><i class="far fa-envelope"></i> ebaadisu2@gmail.com</li>
+                    <li><i class="fab fa-linkedin"></i> linkedin</li>
+                    <li><i class="fas fa-phone"></i> +251945813571</li>
+                </ul>
+            </div>
+            <div class="mr-10">
+                <h2 class="text-2xl font-bold mb-4">Sitemap</h2>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="ml-10 text-gray-500 mt-0">Copyright</p>
+    </footer>
     
-    <form>
-      <fieldset>
-        <label for="subject">Subject: <input id="subject" type="text" required /></label>
-        <label for="email">Email: <input id="email" type="email" required /></label>
-        <label for="message"><textarea id="message" rows="3" cols="30" placeholder="leave a message..."></textarea>
-      </label>
-      </fieldset>
-      <input type="submit" value="Submit" />
-    </form>
-  </main>
-  
-  
-  <footer>
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li><img src="images/email.jpg" alt="email">ebaadisu2@gmail.com</li>
-        <li><img src="images/linkedin.jpg" alt="linkedin">linkedin</li>
-        <li><img src="images/phone.jpg" alt="phone number">+251945813571</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Sitemap</h2>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </section>
-    <p>copyright</p>
-  </footer>
- 
+    <script src="js/script.js"></script>
 </body>
 </html>
